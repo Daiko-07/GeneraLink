@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeneralLink | Inicio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo placeholder-icon"></div>
+        <ul class="nav-links">
+          <li><a class="active" href="#">INICIO</a></li>
+          <li><a href="#">QUIENES SOMOS</a></li>
+        </ul>
+        <div class="nav-btns">
+          <button class="btn-outline">Iniciar sesión</button>
+          <button class="btn-fill">Registrarse</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-img placeholder"></div>
+      <div class="hero-text">
+        <h1>
+          “Generando lazos con confianza,<br />
+          inclusión y cultura”
+        </h1>
+        <p>“Generemos nuevos conocimientos”</p>
+        <button class="btn-big">Ver más</button>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card-img placeholder"></div>
+      <div class="card-box">
+        <div class="card">Actividades culturales cerca de ti</div>
+        <div class="card">Talleres y charlas intergeneracionales</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>GeneralLink © Conexión</p>
+      <p class="politica">Política y privacidad</p>
+      <div class="social"><span>📸</span> <span>✖️</span> <span>📘</span></div>
+    </footer>
+
+    <!-- 🔹 Script aquí para que los elementos ya existan -->
+    <script>
+      document
+        .querySelector(".btn-outline")
+        .addEventListener("click", function () {
+          window.location.href = "inicio.html";
+        });
+
+      document
+        .querySelector(".btn-fill")
+        .addEventListener("click", function () {
+          window.location.href = "registrarse.html";
+        });
+    </script>
+  </body>
+</html>
