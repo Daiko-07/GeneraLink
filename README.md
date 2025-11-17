@@ -6,10 +6,16 @@ GeneraLink es una aplicación creada para fortalecer la conexión social y cultu
 La misión de GeneraLink es ofrecer un entorno digital inclusivo donde todas las personas, especialmente adultos mayores con poca familiaridad tecnológica, puedan relacionarse de manera sencilla y significativa. Por ello, la plataforma incorpora funciones adaptadas como interfaces claras, iconos de mayor tamaño, navegación simple y soporte guiado para que los adultos mayores puedan interactuar con confianza y sin barreras.
 
 Integrantes del proyecto:
+
 Correa Rodriguez Andrea Khristina Esther
-Alarcon Aguirre Luciana Fernanda    
+
+Alarcon Aguirre Luciana Fernanda   
+
 Ortega Ninamango Raì Atreyu
+
 Trujillo Illatopa Ingrid Xiomara
+
 Quiroz Muñoz Piero Rodrigo
+
 Reque Salas Fernando Sebastian
 
