@@ -1,36 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="stylesheet" href="styles.css" />
-
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iniciar sesión</title>
-    <link rel="stylesheet" href="styles-login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>App tipo Facebook con Chat</title>
+    <link rel="stylesheet" href="inicio.css" />
   </head>
   <body>
-    <div class="login-container">
-      <div class="back-btn" onclick="window.location.href='index.html'">←</div>
+    <div class="app-container">
+      <div class="main-content" role="main">
+        <header class="header">
+          <div class="header-left">
+            <div class="back-arrow" title="Volver">
+              <a href="index.html">&#8592;</a>
+            </div>
+            <input
+              type="search"
+              class="search-input"
+              placeholder="Buscar..."
+              aria-label="Buscar"
+            />
+          </div>
+          <div class="header-right">
+            <button class="icon-btn" title="Agregar">＋</button>
+            <button class="icon-btn" title="Cursos">🎓</button>
+            <button
+              class="icon-btn"
+              title="Notificaciones"
+              style="position: relative"
+            >
+              🔔
+              <span class="notification-badge"></span>
+            </button>
+            <img
+              class="profile-img"
+              src="https://randomuser.me/api/portraits/men/54.jpg"
+              alt="Perfil"
+            />
+          </div>
+        </header>
+        <section class="cards-container">
+          <!-- Contenido de las cards aquí (igual que antes) -->
+          <article
+            class="card"
+            role="region"
+            aria-label="Enseñando a tejer una manta"
+          >
+            <div class="card-header">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Foto de perfil de abuela"
+              />
+              <div class="card-title">Enseñando a tejer una manta</div>
+              <div class="card-header-icons">
+                <span class="yellow" title="Información importante">⚠️</span>
+                <span class="heart" title="Me gusta">❤</span>
+              </div>
+            </div>
+            <div
+              class="video-container"
+              role="button"
+              tabindex="0"
+              aria-label="Reproducir video de tejer manta"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80"
+                alt="Abuela tejiendo una manta"
+              />
+              <div class="play-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+              </div>
+            </div>
+            <button class="reply-btn" type="button" aria-label="Responder">
+              ← Responder
+            </button>
+          </article>
+          <article
+            class="card"
+            role="region"
+            aria-label="Tutorial para manejar celular"
+          >
+            <div class="card-header">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Foto de perfil de instructora"
+              />
+              <div class="card-title">
+                Te enseño a manejar tu celular con facilidad, para que puedas
+                hablar con tus seres queridos sin complicaciones
+              </div>
+              <div class="card-header-icons">
+                <span class="yellow" title="Información importante">⚠️</span>
+                <span class="heart" title="Me gusta">❤</span>
+              </div>
+            </div>
+            <div
+              class="video-container"
+              role="button"
+              tabindex="0"
+              aria-label="Video tutorial manejo celular"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                alt="Mujer mostrando celular"
+              />
+              <div class="play-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+              </div>
+            </div>
+            <button class="reply-btn" type="button" aria-label="Responder">
+              ← Responder
+            </button>
+          </article>
+        </section>
+      </div>
 
-      <div class="logo placeholder-icon"></div>
+      <aside class="sidebar" aria-label="Sección en vivo y chats">
+        <div class="live-section" aria-live="polite">
+          <div class="live-title">LIVE <span class="live-dot"></span></div>
+          <div class="live-host" role="listitem">
+            <div class="host-info">
+              <img
+                src="https://randomuser.me/api/portraits/women/67.jpg"
+                alt="Abril Valentina Torres"
+                class="host-img"
+              />
+              <div class="host-name">is hosting</div>
+            </div>
+            <div class="host-description">
+              HABLANDO DE LAS RECETAS DE MI ABUE
+            </div>
+            <a href="#" class="btn-ver" role="button" tabindex="0">VER</a>
+          </div>
+          <div class="live-host" role="listitem">
+            <div class="host-info">
+              <img
+                src="https://randomuser.me/api/portraits/men/60.jpg"
+                alt="Alejandro Ramírez López"
+                class="host-img"
+              />
+              <div class="host-name">is hosting</div>
+            </div>
+            <div class="host-description">CONTANDO MIS EXPERIENCIAS</div>
+            <a href="#" class="btn-ver" role="button" tabindex="0">VER</a>
+          </div>
+        </div>
 
-      <form>
-        <label>Usuario:</label>
-        <div class="input-box placeholder"></div>
+        <div
+          class="chat-toggle"
+          id="chatToggle"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+          aria-label="Desplegar lista de chats"
+        >
+          <span class="chat-dot"></span> CHATS
+        </div>
 
-        <label>Contraseña:</label>
-        <div class="input-box placeholder"></div>
-
-        <a class="forgot" href="#">¿Olvidaste tu contraseña?</a>
-
-        <button type="button" class="btn-primary">Iniciar sesión</button>
-
-        <p class="register-text">
-          ¿No tienes una cuenta? <a href="registrarse.html">Regístrate</a>
-        </p>
-      </form>
-
-      <p class="footer-text">Seguridad y Privacidad</p>
+        <div
+          class="chat-list"
+          id="chatList"
+          role="list"
+          aria-label="Lista de chats"
+        >
+          <!-- Usuarios de ejemplo -->
+          <div
+            class="chat-list-item"
+            tabindex="0"
+            role="listitem"
+            data-userid="1"
+            aria-selected="false"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Juan Pérez"
+            />
+            <div class="name">Juan Pérez</div>
+          </div>
+          <div
+            class="chat-list-item"
+            tabindex="0"
+            role="listitem"
+            data-userid="2"
+            aria-selected="false"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/women/10.jpg"
+              alt="María López"
+            />
+            <div class="name">María López</div>
+          </div>
+          <div
+            class="chat-list-item"
+            tabindex="0"
+            role="listitem"
+            data-userid="3"
+            aria-selected="false"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/men/98.jpg"
+              alt="Carlos Díaz"
+            />
+            <div class="name">Carlos Díaz</div>
+          </div>
+        </div>
+      </aside>
     </div>
+
+    <!-- Chat panel dinámico -->
+    <div
+      class="chat-panel"
+      id="chatPanel"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Chat activo"
+    >
+      <div class="chat-header">
+        <div id="chatUserName">Nombre usuario</div>
+        <button class="close-btn" aria-label="Cerrar chat" id="chatCloseBtn">
+          &times;
+        </button>
+      </div>
+      <div class="chat-messages" id="chatMessages" tabindex="0">
+        <!-- Mensajes dinámicos aquí -->
+      </div>
+      <div class="chat-input-area">
+        <input
+          type="text"
+          id="chatInput"
+          class="chat-input"
+          placeholder="Escribe un mensaje..."
+          aria-label="Área para escribir mensaje"
+        />
+        <button class="send-btn" id="sendBtn" disabled>Enviar</button>
+      </div>
+    </div>
+
+    <script src="inicio.js"></script>
   </body>
 </html>

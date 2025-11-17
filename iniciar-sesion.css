@@ -1,0 +1,164 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333; /* Color de texto principal */
+  background-color: #f4f4f4; /* Fondo gris claro para el body */
+}
+
+.login-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ocupa al menos toda la pantalla */
+  background-color: #393939;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.iniciar-sesion {
+  background-color: #B83748;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+  width: 100%;
+  max-width: 400px;
+  position: relative; /* Para posicionar la flecha relativa a esta sección */
+  z-index: 2;
+  text-align: center; /* Centra el contenido */
+}
+
+/* Flecha en la esquina superior izquierda de la sección */
+.back-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ffffff; /* Color azul para la flecha */
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.back-btn:hover {
+  color: #a7a7a7; /* Cambio de color al hover */
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%; /* Hace el logo circular si es cuadrado */
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+/* Formulario */
+.login-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left; /* Alinea labels e inputs a la izquierda */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+/* Enlace de ingresar (en lugar de botón) */
+.pantalla-inicio {
+  display: inline-block;
+  width: 95%;
+  padding: 12px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.pantalla-inicio:hover {
+  background-color: #2c2c2c;
+  
+}
+
+/* Texto de registrar */
+.registrar {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  
+}
+.regis{
+    font-weight: bold;
+    color: white;
+}
+
+.registrar .regis {
+
+  text-decoration: none;
+}
+
+.registrar .regis:hover {
+  text-decoration: underline;
+}
+
+/* Aviso de privacidad */
+.privacy-notice {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #000000;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 10px;
+  }
+  .iniciar-sesion {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .back-btn {
+    font-size: 20px;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+}

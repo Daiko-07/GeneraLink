@@ -3,28 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GeneralLink | Inicio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>GeneraLink</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
   </head>
-
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo placeholder-icon"></div>
-        <ul class="nav-links">
-          <li><a class="active" href="#">INICIO</a></li>
-          <li><a href="#">QUIENES SOMOS</a></li>
-        </ul>
-        <div class="nav-btns">
-          <button class="btn-outline">Iniciar sesión</button>
-          <button class="btn-fill">Registrarse</button>
+    <!-- TopHeader -->
+    <header class="encabezado">
+      <div class="contenedor">
+        <!-- Contenedor del logo -->
+        <div class="logo-contenedor">
+          <img src="imagenes/logo.png" alt="Logo GeneraLink" class="logo-img" />
+          <span class="nombre-empresa">| Inicio</span>
         </div>
-      </nav>
+        <!-- Navegación -->
+        <nav class="navegacion">
+          <a href="quienes-somos.html" class="quienes-somos" target="_self">
+            <strong>¿Quiénes somos?</strong>
+          </a>
+          <a href="registrarse.html" class="registrar" target="_self"
+            >Regístrate</a
+          >
+          <a href="iniciar-sesion.html" class="ingresar" target="_self"
+            >Iniciar Sesion</a
+          >
+        </nav>
+      </div>
     </header>
-
-    <section class="hero">
-      <div class="hero-img placeholder"></div>
-      <div class="hero-text">
+    <!-- Seccion Parte Inicial -->
+    <section class="Parte-Inicial">
+      <div class="Parte-Inicial-img"></div>
+      <div class="Parte-Inicial-text">
         <h1>
           “Generando lazos con confianza,<br />
           inclusión y cultura”
@@ -33,34 +42,72 @@
         <button class="btn-big">Ver más</button>
       </div>
     </section>
-
-    <section class="cards">
-      <div class="card-img placeholder"></div>
-      <div class="card-box">
-        <div class="card">Actividades culturales cerca de ti</div>
-        <div class="card">Talleres y charlas intergeneracionales</div>
+    <!-- Seccion Parte Secundaria -->
+    <section class="Parte-Secundaria">
+      <div class="Parte-Secundaria-img">
+        <img src="imagenes/image.png" alt="Logo" class="img-secundaria" />
+      </div>
+      <div class="Parte-Secundaria-box">
+        <div class="text">Actividades culturales cerca de ti</div>
+        <div class="text">Talleres y charlas intergeneracionales</div>
       </div>
     </section>
+    <!-- PIE DE PAGINA -->
 
-    <footer>
-      <p>GeneralLink © Conexión</p>
-      <p class="politica">Política y privacidad</p>
-      <div class="social"><span>📸</span> <span>✖️</span> <span>📘</span></div>
-    </footer>
+    <!-- PIE DE PAGINA -->
 
-    <!-- 🔹 Script aquí para que los elementos ya existan -->
-    <script>
-      document
-        .querySelector(".btn-outline")
-        .addEventListener("click", function () {
-          window.location.href = "inicio.html";
-        });
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="imagenes/logo.png" alt="Logo" class="footer-logo" />
+            <p>GeneraLink</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
 
-      document
-        .querySelector(".btn-fill")
-        .addEventListener("click", function () {
-          window.location.href = "registrarse.html";
-        });
-    </script>
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>
